@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: rgba(245, 222, 179, 0.4);
+}
+
+
+/*------------------- NavBar ---------------------------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(245, 222, 179, 0.6);
+}
+
+.navbar h1 {
+    font-weight: bolder;
+    color: gray;
+}
+
+.user_img {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.account h1 {
+    margin-right: 8px;
+    font-size: 18px;
+    color: rgba(20, 20, 20, 0.7);
+}
+
+.account i {
+    color: rgba(20, 20, 20, 0.6);
+}
+
+.fa-angle-down {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(245, 222, 179, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgba(20, 20, 20, 0.7);
+    ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*------------------- Dashborad ---------------------------------- */
+
+.dasborad {
+    padding: 40px 80px;
+}
+
+.dasborad-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dasborad h1 {
+    text-align: start;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.dasborad-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 5px;
+    color: rgb(0, 106, 255);
+}
+
+.dasborad-item p {
+    margin-bottom: 14px;
+    font-weight: bolder;
+
+}
+
+.dasborad-item span {
+    font-size: 24px;
+}
+
+#netblance {
+    color: green;
+}
+
+
+
+/*------------------- Income Content ---------------------------------- */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.income {
+    padding: 40px 80px;
+}
+
+.income-content {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.income h1 {
+    text-align: start;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.income-content label {
+    font-size: 24px;
+}
+
+.income-content #salary {
+    margin-left: 200px;
+}
+
+.income-content #business {
+    margin-left: 77px;
+}
+
+.income-content #Other-income {
+    margin-left: 108px;
+}
+
+.income-content #submit {
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    color: white;
+}
+
+.income-content #total-income {
+    margin-left: 114px;
+}
+
+.income-content input {
+    padding: 5px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+/* using js  */
+.error {
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.reset {
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+/*------------------- Expenses ---------------------------------- */
+
+.daily-expenses {
+    padding: 20px 80px;
+}
+
+.daily-expenses h3 {
+    text-align: start;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.expenses-content {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 40px 60px;
+    border-radius: 5px;
+
+}
+
+.expense {
+    margin-bottom: 20px;
+
+}
+
+.expense label {
+    margin-right: 40px;
+    font-size: 24px;
+}
+
+.expense .expamount {
+    margin-right: 77px;
+}
+
+.expense input {
+    padding: 8px;
+    outline: none;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.expenses-content button {
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+
+/*------------------- Manage Expenses ---------------------------------- */
+
+
+.manage {
+    padding: 20px 80px;
+}
+
+.manage h3 {
+    text-align: start;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.manage-content {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 5px;
+}
+
+/* using javascript */
+.edit {
+    color: white;
+    background-color: green;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.delete {
+    color: white;
+    background-color: red;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.listContent {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+    width: 100%;
+    border-left: 5px solid rgb(19, 127, 235);
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    align-items: center;
+}
+
+.category {
+    font-weight: 500;
+    color: black;
+
+}
+
+.amount {
+    margin-left: 20%;
+    color: black;
+}
+
+

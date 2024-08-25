@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Income Expense Calculator</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="account">
+                    <img src="./Image/prof.png" alt="user" class="user_img">
+                    <h1>Vankat</h1>
+                </div>
+                <h1>Income Expense Calculator</h1>
+                <div class="account">
+                    <h1>My Account </h1>
+                    <div class="dropdown">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <div class="dropdown-content">
+                            <a href="#">Profile</a>
+                            <a href="#">Setting</a>
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="dasborad">
+                <div>
+                    <div class="dasborad-content">
+                        <h1>Dashborad</h1>
+                        <h1 id="netblance">Net Balance : 0</h1>
+                    </div>
+                    <div class="dasborad-item">
+                        <div>
+                            <p>Total Amount</p>
+                            <span id="Tamount">0</span>
+                        </div>
+                        <div>
+                            <p>Total Expense</p>
+                            <span id="Texpense">0</span>
+                        </div>
+                        <div>
+                            <p>Balance</p>
+                            <span id="balance">0</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="income">
+                    <h1>Income</h1>
+                    <div class="income-content" id="income-content">
+                        <div id="Error"></div>
+                        <div>
+                            <label for="salary">Salay : </label>
+                            <input type="number" name="salary" id="salary">
+                        </div>
+                        <div>
+                            <label for="business">Business Income : </label>
+                            <input type="number" name="business" id="business">
+                        </div>
+                        <div>
+                            <label for="Other-income">Other Income : </label>
+                            <input type="number" name="Other-income" id="Other-income">
+                        </div>
+                        <button id="submit">Submit</button>
+                        
+                    </div>
+                </div>
+                <div class="daily-expenses">
+                    <h3>Add Your Expenses</h3>
+                    <div class="expenses-content">
+                        <div id="exError"></div>
+                        <div class="expense">
+                            <label for="expenseCategory">Expense Category : </label>
+                            <input type="text" name="expenseCategory" id="expenseCategory" require>
+
+                        </div>
+                        <div class="expense">
+                            <label for="expenseamount" class="expamount">Enter Amount : </label>
+                            <input type="number" name="expenseamount" id="expenseamount" require>
+                        </div>
+                        <div>
+                            <button type="submit" name="add" id="add">Add Expense</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="manage">
+                <h3>Manage Expenses</h3>
+                <div class="manage-content" id="manage">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section>
+    
+        </section>
+    </main>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
