@@ -211,6 +211,16 @@ body {
     border-radius: 3px;
 }
 
+.delete-income {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
 /*------------------- Expenses ---------------------------------- */
 
 .daily-expenses {
